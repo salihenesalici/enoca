@@ -1,0 +1,80 @@
+/* Genel Stil */
+
+.footer {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Üst Kısım */
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo-highlight {
+  color: #ff0000;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Sosyal Medya */
+.footer-social {
+  margin: 20px 0;
+}
+
+.footer-social a {
+  margin: 0 10px;
+}
+
+.footer-social img {
+  width: 30px;
+  height: 30px;
+  filter: invert(100%);
+}
+
+/* Alt Kısım */
+.footer-bottom {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.footer-policy {
+  margin-top: 10px;
+}
+
+.footer-policy a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 5px;
+  font-size: 12px;
+}
+
+.footer-policy a:hover {
+  color: #fff;
+  text-decoration: underline;
+}

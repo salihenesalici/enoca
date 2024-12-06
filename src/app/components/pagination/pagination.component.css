@@ -1,0 +1,28 @@
+.pagination-container {
+    font-family: Arial, sans-serif;
+  }
+  
+  .content {
+    margin-bottom: 20px;
+  }
+  
+  .pagination {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .pagination button {
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .pagination button.active {
+    background: #007BFF;
+    color: white;
+    border-color: #007BFF;
+  }
+  

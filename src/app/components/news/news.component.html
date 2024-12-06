@@ -1,0 +1,28 @@
+<div class="news-container">
+  <div class="news">
+    <div *ngFor="let headLines of topHeadLinesResult" class="item">
+      <div class="container" *ngIf="headLines.title && headLines.description && headLines.author && headLines.urlToImage">
+        <div class="text">
+          <p class="header">{{ headLines.title }}</p>
+          <p class="description">{{ headLines.description }}</p>
+          <p class="name"><strong>{{ headLines.author }}</strong></p>
+          <p class="date">{{headLines.publishedAt | date}}</p>
+        </div>
+        <div class="image">
+          <img
+            [src]="headLines.urlToImage"
+            width="200px"
+            alt="Image"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-pagination
+ [totalItems]="topHeadLinesResult.length"
+ [itemsPerPage]="itemPerPage"
+ [currentPage]="currrentPage"
+ (onClick)="changePage($event)"
+></app-pagination>
